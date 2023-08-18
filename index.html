@@ -90,18 +90,38 @@
                             </div>
                         </div>
                     </div>
-                    <!-- third card -->
+                    <!-- Parallelogram card -->
                     <div class="card bg-base-100 shadow-xl">
                         <figure>
-                            <img src="/images/rectangle.png" alt="Shoes" />
+                            <img src="/images/parallelogram.png" alt="Shoes" />
                         </figure>
                         <div class="card-body">
-                            <h2 class="card-title">Shoes!</h2>
+                            <h2 class="card-title">parallelogram</h2>
+                            <p>Area (A) = w X l</p>
                             <p>
-                                If a dog chews shoes whose shoes does he choose?
+                                <input
+                                    id="parallelogram-base"
+                                    type="text"
+                                    class="border bg-gray-100 text-xl w-20 px-2"
+                                    placeholder="base"
+                                />
+                                <span class="ml-2">cm</span>
+                                <input
+                                    id="parallelogram-height"
+                                    type="text"
+                                    class="border bg-gray-100 text-xl w-20 px-2"
+                                    placeholder="height"
+                                />
+                                <span class="ml-1">cm</span>
                             </p>
+                            <p>Area : <span id="parallelogram-area">0</span>cm<sup>2</sup></span></p>
                             <div class="card-actions justify-end">
-                                <button class="btn btn-primary">Buy Now</button>
+                                <button
+                                    class="btn btn-primary w-full"
+                                    onclick="calculateParallelogramArea()"
+                                >
+                                    Calculate
+                                </button>
                             </div>
                         </div>
                     </div>
